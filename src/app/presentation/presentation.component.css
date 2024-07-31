@@ -1,0 +1,42 @@
+.titre {
+  margin-top: 5rem;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.historique-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 5px solid #508d4e;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+.date {
+  font-weight: bold;
+  color: #508d4e;
+  text-align: left;
+}
+.description {
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+.description::before {
+  content: "• ";
+  color: #508d4e;
+}
+.date,
+.description {
+  padding: 10px;
+}
+.date {
+  border-right: 2px solid #508d4e;
+}

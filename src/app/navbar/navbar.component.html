@@ -1,0 +1,106 @@
+<nav [ngClass]="{ 'scrolled': isScrolled }" class="navbar navbar-expand-lg">
+  <div class="navbar-content container-fluid">
+    <a class="logo navbar-brand" href="#">L O G O</a>
+    <!-- <a
+            class="heure"
+            aria-current="page"
+            href="#"
+            >{{ tempsRestant.days() }}j : {{ tempsRestant.hours() }}h :
+            {{ tempsRestant.minutes() }}m : {{ tempsRestant.seconds() }}s</a
+          > -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul
+        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+        style="--bs-scroll-height: 100px"
+      >
+        <li class="heure nav-item"></li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            aria-current="page"
+           routerLink="/Accueil"
+            >Accueil</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            routerLink="/presentation"
+            >Presentation</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/nouvelle"
+            >Nouvelles</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/a-propos"
+            >A propos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/partenaire"
+            >Partenaires</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/autre-activite"
+            >Autres activités</a
+          >
+        </li>
+      </ul>
+      <!-- <div class="d-flex">
+        <button class="hvr-pulse-shrink btn">
+          <a class="text-decoration-none" href="#">S'inscrire</a>
+        </button>
+        <button class="hvr-pulse-shrink btn">
+          <a class="text-decoration-none" href="#">Se connecter</a>
+        </button>
+      </div> -->
+
+      <!-- <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn hvr-grow-rotate btn-primary" type="submit">
+          Search
+        </button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

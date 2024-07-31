@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap");
+.navbar {
+  background-color: #508d4e;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #333; /* Couleur lorsque la page est défilée */
+  color: #fff; /* Couleur du texte lorsque la page est défilée */
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 3rem;
+  font-size: 1.1rem;
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
+.nav-link:hover {
+  color: #45c4b0;
+}
+
+@media (max-width: 1000px) {
+  .navbar-nav {
+    flex-direction: column; /* Aligner les éléments en colonne */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+  }
+
+  .nav-item {
+    width: 100%; /* Optionnel : pour que chaque lien prenne toute la largeur */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 0.7rem; /* Espace entre les éléments */
+    margin-left: -13rem;
+  }
+}
+
+.logo {
+  color: #fff8f6;
+  margin-right: 12rem;
+}
+.heure {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff8f6;
+  margin-left: 2rem;
+  display: flex;
+}
+
+.collapse {
+  margin-left: 10rem;
+}

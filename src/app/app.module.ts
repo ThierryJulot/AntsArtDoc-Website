@@ -17,6 +17,9 @@ import { AutreActiviteComponent } from './autre-activite/autre-activite.componen
 import { PartenaireComponent } from './partenaire/partenaire.component';
 import { RouterModule, RouterOutlet, Routes } from '@angular/router';
 import { FondateurComponent } from './fondateur/fondateur.component';
+import { ProgrammeCardComponent } from './programme-card/programme-card.component';
+import { BlogLayoutComponent } from './blog-layout/blog-layout.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { FondateurComponent } from './fondateur/fondateur.component';
     AproposComponent,
     AutreActiviteComponent,
     PartenaireComponent,
-    FondateurComponent
+    FondateurComponent,
+    FormComponent,
+    ProgrammeCardComponent,
+    BlogLayoutComponent
   ],
   imports: [
     BrowserModule,

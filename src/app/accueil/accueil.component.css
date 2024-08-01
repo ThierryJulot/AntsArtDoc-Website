@@ -15,7 +15,8 @@ a {
 
 .body {
   background-color: #ece6e6;
-   padding-top: 60px; /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+   padding-top: 60px; 
+   /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
 }
 
 .titre {
@@ -32,6 +33,12 @@ a {
   margin-bottom: 2rem;
   margin-top: -0.7rem;
 }
+.bg_crd{
+  background-color: #FFE53B !important;
+	background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%) !important;
+	min-height: 100vh;
+	font-family: 'Fira Sans', sans-serif;
+	display: flex;}
 
 .img-fluid {
   width: 13cm;
@@ -94,3 +101,34 @@ a {
   filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
   transition: all 0.3s ease;
 }
+
+.three h1 {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  margin-left: 7rem;
+  margin-bottom: 3rem;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+

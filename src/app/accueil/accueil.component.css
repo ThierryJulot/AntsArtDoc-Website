@@ -15,8 +15,8 @@ a {
 
 .body {
   background-color: #ece6e6;
-   padding-top: 60px; 
-   /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+  padding-top: 60px;
+  /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
 }
 
 .titre {
@@ -33,12 +33,13 @@ a {
   margin-bottom: 2rem;
   margin-top: -0.7rem;
 }
-.bg_crd{
-  background-color: #FFE53B !important;
-	background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%) !important;
-	min-height: 100vh;
-	font-family: 'Fira Sans', sans-serif;
-	display: flex;}
+.bg_crd {
+  background-color: #ffe53b !important;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%) !important;
+  min-height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
+}
 
 .img-fluid {
   width: 13cm;
@@ -132,3 +133,168 @@ a {
   background-color: #333;
 }
 
+.test {
+  height: 200px;
+}
+
+.dowload {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='88' y1='88' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23005092'/%3E%3Cstop offset='1' stop-color='%23007cc4'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='75' y1='76' x2='168' y2='160'%3E%3Cstop offset='0' stop-color='%23868686'/%3E%3Cstop offset='0.09' stop-color='%23ababab'/%3E%3Cstop offset='0.18' stop-color='%23c4c4c4'/%3E%3Cstop offset='0.31' stop-color='%23d7d7d7'/%3E%3Cstop offset='0.44' stop-color='%23e5e5e5'/%3E%3Cstop offset='0.59' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.75' stop-color='%23f9f9f9'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cfilter id='c' x='0' y='0' width='200%25' height='200%25'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='12' /%3E%3C/filter%3E%3C/defs%3E%3Cpolygon fill='url(%23a)' points='0 174 0 0 174 0'/%3E%3Cpath fill='%23000' fill-opacity='.5' filter='url(%23c)' d='M121.8 174C59.2 153.1 0 174 0 174s63.5-73.8 87-94c24.4-20.9 87-80 87-80S107.9 104.4 121.8 174z'/%3E%3Cpath fill='url(%23b)' d='M142.7 142.7C59.2 142.7 0 174 0 174s42-66.3 74.9-99.3S174 0 174 0S142.7 62.6 142.7 142.7z'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 2rem 0;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.voir {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.voir:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.voir:hover {
+  color: #fff;
+}
+
+.voir:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.voir:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.voir:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+/* bouton telecharger */
+/* From Uiverse.io by andrew-demchenk0 */
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795e;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: #17795e;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #146c54;
+}
+
+/* mettre les boutons cote a cote  */
+.button-wrapper {
+  display: flex;
+  gap: 1rem; /* Adjust space between buttons if needed */
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.button,
+.voir {
+  margin: 0; /* Reset margin to avoid extra spacing */
+}
+
+.button__text {
+  font-weight: 100;
+}
+.hidden-on-small {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .dowload .row {
+    flex-direction: column; /* Stack columns on small screens */
+    align-items: center; /* Center content horizontally */
+  }
+  .dowload .col-md-6 {
+    text-align: center; /* Center text in columns */
+    margin-bottom: 1rem; /* Add margin between stacked columns */
+  }
+  .button-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center; /* Center buttons horizontally */
+    gap: 0.5rem; /* Reduce gap between buttons on small screens */
+  }
+  .hidden-on-small {
+    display: none;
+  }
+}

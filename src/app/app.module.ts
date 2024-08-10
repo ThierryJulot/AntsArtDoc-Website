@@ -21,10 +21,20 @@ import { ProgrammeCardComponent } from './programme-card/programme-card.componen
 import { BlogLayoutComponent } from './blog-layout/blog-layout.component';
 import { FormComponent } from './form/form.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import {
+  FormControl,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { merge } from 'rxjs';
+
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -42,140 +52,9 @@ import { FormsModule } from '@angular/forms';
     FondateurComponent,
     ProgrammeCardComponent,
     BlogLayoutComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     BrowserModule,
     AppRoutingModule,
     NgbModule,
@@ -184,6 +63,11 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

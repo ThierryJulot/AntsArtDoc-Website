@@ -7,4 +7,123 @@
 .example-full-width {
   width: 100%;
 }
+.mat-car {
+  margin: 2%;
+  text-align: left;
+}
+mat-icon {
+  color: #508d4e;
+}
+.card-img-top {
+  object-fit: cover; /* Ajuste l'image pour qu'elle ne dépasse pas */
+  height: 30rem; /* Assure que l'image garde ses proportions */
+}
 
+.card-body {
+  flex: 1; /* Permet au corps de la carte de remplir l'espace restant */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Ajuste le padding au besoin */
+}
+.btn-spacing {
+  margin-right: 2rem !important; /* Ajustez la valeur selon vos besoins */
+}
+
+.btn-clear {
+  font-family: inherit;
+  font-size: 20px;
+  background: #ff4d4d; /* Couleur de fond pour le bouton "Clear" */
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-right: 1em; /* Espace entre les boutons */
+  position: relative;
+  text-align: center;
+}
+
+.btn-clear .btn-text {
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.btn-clear .btn-icon {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  right: 0.7em;
+  transition: all 0.2s;
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn-clear:hover .btn-icon {
+  display: block;
+  right: 35%;
+  transform: translateX(50%);
+}
+
+.btn-clear:hover .btn-text {
+  opacity: 0;
+}
+
+/* Style pour le bouton "Send" */
+.send {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.send span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.send svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send:hover span {
+  transform: translateX(5em);
+}
+
+.send:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}

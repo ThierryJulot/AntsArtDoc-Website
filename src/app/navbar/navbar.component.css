@@ -18,9 +18,10 @@
 .nav-link {
   color: #ffffff !important;
   margin-left: 3rem;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-family: "Zain", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+
   font-style: normal;
   font-size: 1.7rem;
 }
@@ -58,4 +59,10 @@
 
 .collapse {
   margin-left: 10rem;
+}
+
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
 }

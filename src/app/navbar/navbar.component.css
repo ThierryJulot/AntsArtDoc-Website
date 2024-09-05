@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap");
 .navbar {
-  background-color: #508d4e;
+  background-color: #7FA1C3;
     position: fixed;
   top: 0;
   width: 100%;
@@ -11,12 +11,19 @@
 }
 
 .navbar.scrolled {
-  background-color: #333; /* Couleur lorsque la page est défilée */
-  color: #fff; /* Couleur du texte lorsque la page est défilée */
+  background-color: #6482AD; /* Couleur lorsque la page est défilée */
+}
+
+.navbar.scrolled .nav-link {
+  color: #F5EDED !important; /* Couleur du texte lorsque la page est défilée */
+}
+
+.navbar.scrolled .logo{
+  color: #F5EDED !important; 
 }
 
 .nav-link {
-  color: #ffffff !important;
+  color: #F5EDED !important;
   margin-left: 3rem;
   font-size: 2rem;
   font-family: "Zain", sans-serif;
@@ -48,6 +55,7 @@
 .logo {
   color: #fff8f6;
   margin-right: 12rem;
+  font-size: 1.3rem;
 }
 .heure {
   font-size: 0.9rem;
@@ -65,4 +73,35 @@
 @keyframes leFadeIn {
     from { opacity: 0 }
     to { opacity: 1 }
+}
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #A94438;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }

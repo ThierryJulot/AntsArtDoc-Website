@@ -3,9 +3,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css',
+  styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent implements OnInit {
   isMobile: boolean;
   isScrolled = false;
 
@@ -13,18 +13,34 @@ export class NavbarComponent implements OnInit{
     this.isMobile = window.innerWidth <= 600;
   }
 
-  // manova anle class defini à une taille donné
+  // Adapter la classe définie en fonction de la taille de la fenêtre
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.isMobile = event.target.innerWidth <= 600;
   }
 
-  // changer la couleur du navbar lorsqu'on scrolle
+  // Changer la couleur de la barre de soulignement lors du défilement
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const contentElement = document.getElementById('content');
     if (contentElement) {
       this.isScrolled = window.scrollY > contentElement.offsetTop;
+
+      // Modifier la couleur du lien de navigation
+      const navbarLink = document.querySelector('.hvr-underline-from-center');
+      if (navbarLink) {
+        if (this.isScrolled) {
+          (navbarLink as HTMLElement).style.setProperty(
+            '--underline-color',
+            '#ffffff'
+          ); // Change en blanc
+        } else {
+          (navbarLink as HTMLElement).style.setProperty(
+            '--underline-color',
+            '#A94438'
+          ); // Rétablir la couleur d'origine
+        }
+      }
     }
   }
 

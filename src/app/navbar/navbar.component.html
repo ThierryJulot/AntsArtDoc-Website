@@ -1,6 +1,6 @@
 <nav [ngClass]="{ scrolled: isScrolled }" class="navbar navbar-expand-lg">
   <div class="navbar-content container-fluid">
-    <a class="logo navbar-brand" href="#">L O G O</a>
+    <a class="logo navbar-brand" href="#">A N T S ' A R T D O C</a>
     <!-- <a
             class="heure"
             aria-current="page"
@@ -9,7 +9,7 @@
             {{ tempsRestant.minutes() }}m : {{ tempsRestant.seconds() }}s</a
           > -->
     <button
-      class="navbar-toggler"
+      class="navbar-toggler text-light"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarScroll"
@@ -27,8 +27,8 @@
         <li class="heure nav-item"></li>
         <li class="cssanimation leFadeIn sequence nav-item">
           <a
-            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
-            class="nav-link active"
+            
+            class="nav-link active hvr-pop"
             aria-current="page"
             routerLink="/Accueil"
             >Accueil</a
@@ -36,16 +36,14 @@
         </li>
         <li class="cssanimation leFadeIn sequence nav-item">
           <a
-            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
-            class="nav-link active"
+            class="nav-link active hvr-pop"
             routerLink="/presentation"
             >Presentation</a
           >
         </li>
         <li class="cssanimation leFadeIn sequence nav-item">
           <a
-            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
-            class="nav-link active"
+            class="nav-link active hvr-pop"
             aria-current="page"
             routerLink="/nouvelle"
             >Nouvelles</a
@@ -54,8 +52,7 @@
 
         <li class="cssanimation leFadeIn sequence nav-item">
           <a
-            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
-            class="nav-link active"
+            class="nav-link active hvr-pop"
             aria-current="page"
             routerLink="/partenaire"
             >Partenaires</a
@@ -63,8 +60,7 @@
         </li>
         <li class="cssanimation leFadeIn sequence nav-item">
           <a
-            [ngClass]="isMobile ? 'hvr-grow' : 'hvr-underline-from-center'"
-            class="nav-link active"
+            class="nav-link active hvr-pop"
             aria-current="page"
             routerLink="/a-propos"
             >Nous contacter</a

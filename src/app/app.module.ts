@@ -53,6 +53,7 @@ import { MatIconModule } from '@angular/material/icon';
     ProgrammeCardComponent,
     BlogLayoutComponent,
     FormComponent,
+    PartenaireComponent
   ],
   imports: [
     BrowserModule,
